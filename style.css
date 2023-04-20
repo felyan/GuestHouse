@@ -147,8 +147,8 @@ img {
   position: fixed;
   top: 0;
   bottom: 0;
-  /* right: -100%; */
-  right: 0;
+  right: -100%;
+  /* right: 0; */
   width: 300px;
   padding: 20px;
   transition: var(--transition);
@@ -206,6 +206,125 @@ img {
   letter-spacing: 3px;
   font-size: 30px;
   color: var(--yellow);
+  border-bottom: 5px solid var(--dark);
+  width: 235px;
+  margin: 15px 0;
 }
+
+.sec-width {
+  width: 85vw;
+  margin: 0 auto!important;
+}
+
+
+/* service */
+.services {
+  margin: 40px 0;
+}
+
+.service {
+  display: flex;
+  margin: 30px 0;
+}
+
+.service-icon {
+  flex: 30%;
+  align-self: flex-start;
+  font-size: 48px;
+  color: #252525;
+}
+
+.service-content {
+  padding-left: 20px;
+}
+
+.service-content h2 {
+  opacity: .7;
+}
+
+.service-content button {
+  margin-left: 0;
+  margin-right: 0;
+  background: var(--yellow);
+  color: #fff;
+}
+
+@media(min-width: 992px) {
+  .services-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+  }
+}
+
+/* booking form */
+.book{
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("images/header.jpg") center/cover no-repeat;
+  color: #fff;
+  padding: 40px 60px;
+}
+
+.book-form {
+  display: grid;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.book-form input[type = "submit"]{
+  margin: 18px 0 0 0;
+  background: var(--dark);
+  color: #fff;
+  border: 1px solid #fff;
+}
+.book-form label, .book-form input{
+  width: 100%;
+}
+.book-form label{
+  font-weight: 600;
+  word-spacing: 5px;
+  padding-bottom: 8px;
+}
+.book-form input:not(.btn){
+  margin: 4px 0 16px 0;
+  padding: 12px 15px;
+  border-radius: 5px;
+  font-size: 17px;
+  border: none;
+}
+.book-form input:focus{
+  outline: 0;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
+}
+@media(min-width: 768px){
+  .book-form{
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 24px;
+  }
+}
+@media(min-width: 1170px){
+  .book-form{
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media(min-width: 1370px){
+  .book-form{
+      grid-template-columns: 2fr 2fr 1fr 1fr 1fr 2fr;
+  }
+  .book{
+      height: 40vh;
+      display: grid;
+  }
+}
+@media(max-width: 500px){
+  .book{
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+}
+
 
 
